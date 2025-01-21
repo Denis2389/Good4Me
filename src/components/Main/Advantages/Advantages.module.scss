@@ -1,0 +1,15 @@
+.advantagesContainer {
+   padding: 100px 330px 90px 330px;
+
+   ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+   }
+
+   li {
+    width: 170px;
+    height: 25px;
+   }
+}

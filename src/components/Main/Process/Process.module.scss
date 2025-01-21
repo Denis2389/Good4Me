@@ -1,0 +1,70 @@
+.processContainer {
+    margin-bottom: 100px;
+
+    h2 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 152%;
+        text-align: center;
+        margin: 0 auto;
+        color: #000;
+        width: 540px;
+        padding-bottom: 95px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 62px;
+            }
+
+            h3 {
+                padding-top: 33px;
+                padding-bottom: 16px;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 113%;
+                text-align: center;
+                color: #000;
+            }
+
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 200%;
+                text-align: center;
+                color: #828181;
+                width: 320px;
+            }
+        }
+    }
+}
+
+.svgBorder {
+    padding: 18px;
+    background: #fff8f6;
+    border-radius: 20px;
+}
+
+.svgBorderDif {
+    background: #f6623e;
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.cleanCont {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    background: #fff8f6;
+    border-radius: 10px;
+    padding: 44px 26px 59px 26px;
+}

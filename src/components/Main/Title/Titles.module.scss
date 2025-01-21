@@ -1,0 +1,59 @@
+.titleContainer {
+    background: #fff8f6;  
+    border-radius: 0 0 200px 200px;
+}
+
+.title {
+    width: 644px;
+    p {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 162%;
+        color: #f6623e;
+        padding-bottom: 4px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 66px;
+        line-height: 139%;
+        color: #000;
+        padding-bottom: 40px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145%;
+        color: #454545;
+        padding-bottom: 30px;
+        width: 580px;
+    }
+
+    button {
+        padding: 14px 30px;
+        background: #f6623e;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        transition: border-radius 0.3s ease-in-out;
+    }
+
+    button:hover {
+        border-radius: 20px;
+    }
+
+}
+
+.bgPhoto {
+    width: 500px;
+}
+
+.infoContainer {
+    padding: 208px 176px;
+    display: flex;
+}
