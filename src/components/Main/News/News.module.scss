@@ -1,0 +1,94 @@
+.firstNewsWrapper {
+    margin-top: 120px;
+    padding-right: 340px;
+    padding-left: 340px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 105%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    strong {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        color: #454545;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 59px;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+        li {
+            
+            h3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 144%;
+                color: #000;
+                margin-top: 19px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 171%;
+                color: #828181;
+                width: 355px;
+            }
+
+            a {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 156%;
+                text-transform: uppercase;
+                text-align: center;
+                color: #000;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #828181;
+                }
+            }
+        }
+    }
+}
+
+.secondNewsWrapper {
+    margin-top: 122px;
+
+    p {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 60%;
+        color: #f6633e76;
+        margin-top: 72px;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 42px;
+        li {
+            &:nth-child(2n) {
+                margin-top: 65px;
+            }
+        }
+    }
+}

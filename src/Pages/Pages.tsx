@@ -7,6 +7,7 @@ import Products from '../components/Main/Products/Products';
 import Reviews from '../components/Main/Reviews/Reviews';
 import Titles from '../components/Main/Title/Titles';
 import Vitamins from '../components/Main/Vitamins/Vitamins';
+import News from '../components/Main/News/News'
 import styles from './Pages.module.sass'
 
 const Pages = () => {
@@ -24,6 +25,7 @@ const Pages = () => {
           <Products />
           <About />
           <Reviews />
+          <News />
         </main>
       </>
     );

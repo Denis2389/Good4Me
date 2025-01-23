@@ -18,10 +18,10 @@ const Reviews = () => {
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
           loop={true}
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={50}
           autoplay={{
-            delay: 4000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -97,6 +97,29 @@ const Reviews = () => {
               “At Good4Me, we strive to create products that make a difference
               in your life. Hear from countless happy customers who have shared
               their journeys on our website.”
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className={styles.block}>
+            <div className={styles.flex}>
+              <div className={styles.flexPhoto}>
+                <div>
+                  <img src={coralianRev} alt="coralianPh" />
+                </div>
+                <div className={styles.flexName}>
+                  <h4>Coralieanne T</h4>
+                  <h5>Management Support</h5>
+                </div>
+              </div>
+              <img
+                style={{ marginLeft: "auto", paddingRight: "25px" }}
+                src={quote}
+                alt="quote"
+              />
+            </div>
+            <p>
+              “Our commitment to quality grows stronger every day, thanks to
+              your invaluable support. Discover why so many customers trust us
+              by reading their stories on our website.”
             </p>
           </SwiperSlide>
         </Swiper>
