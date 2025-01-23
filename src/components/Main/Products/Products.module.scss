@@ -1,0 +1,89 @@
+.productsContainer {
+    margin-top: 54px;
+    margin-bottom: 170px;
+    padding-left: 110px;
+    display: flex;
+
+    .textContainer {
+
+        width: 57%;
+        margin-top: 120px;
+
+        
+        h4 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 512%;
+            letter-spacing: 0.06em;
+            color: #f6623e;
+        }
+
+        h3 {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 113%;
+            letter-spacing: 0.02em;
+            color: #000;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 189%;
+            letter-spacing: 0.06em;
+            color: #828181;
+            width: 805px;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.cardList {
+
+    width: 300px;
+
+    img {
+        width: 300px;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 137%;
+        letter-spacing: 0.06em;
+        color: #000;
+        margin-top: 13px;
+        margin-bottom: 11px;
+    }
+
+    strong {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 133%;
+        color: #f6623e;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            text-decoration: line-through;
+            color: #828181;
+            margin-left: 6px;
+        }
+    }
+}
+
+.photoContainer {
+    position: relative;
+    margin-top: 120px;
+}
+
+.pngBg {
+   background-color: #fef0e7;
+   border-radius: 20px;
+    img {
+        max-width: 600px;
+    }
+}

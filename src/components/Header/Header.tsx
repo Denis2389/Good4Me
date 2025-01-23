@@ -11,22 +11,22 @@ const Header = () => {
           <img src={Logo} alt="Logo" />
         </div>
         <ul className={styles.titleList}>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">home</a>
           </li>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">shop</a>
           </li>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">faq's</a>
           </li>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">stockists</a>
           </li>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">wholesale</a>
           </li>
-          <li>
+          <li className={styles.underlineBlock}>
             <a href="#">contact</a>
           </li>
         </ul>

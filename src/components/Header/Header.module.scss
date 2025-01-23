@@ -25,18 +25,34 @@
         margin-right: 0;
     }
 
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 133%;
-        color: #000;
-        transition: color 0.3s ease;
-    }
-    
-    a:hover {
-        color: #f6623e;
+    .underlineBlock {
+        position: relative;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 133%;
+            color: #000;
+            transition: color 0.3s ease;
+
+            &::after {
+                color: #f6623e;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #f6623e;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
 }
 
