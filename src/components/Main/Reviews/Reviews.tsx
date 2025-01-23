@@ -14,12 +14,12 @@ const Reviews = () => {
       <section className={styles.reviewsContainer}>
         <h2>What Our Happy Cilents Say</h2>
         <Swiper
-          className={styles.swiperCont}
+          className="custom-swiper-one"
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
           loop={true}
           slidesPerView={1}
-          spaceBetween={50}
+          spaceBetween={3}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
