@@ -2,7 +2,6 @@
     background-color: #fff8f6;
     border-radius: 0 0 0 200px;
     padding: 94px 333px;
-    margin: 0 auto;
 
     h2 {
         font-weight: 600;
@@ -21,4 +20,52 @@
     text-align: center;
     color: #454545;
     margin-bottom: 84px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.leftBlockList,
+.rigthBlockList {
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 144%;
+        color: #f6623e;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 179%;
+        color: #000;
+    }
+}
+
+.leftBlockList {
+    ul {
+        margin-right: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 135px;
+        margin-top: 50px;
+
+        li {
+            width: 305px;
+        }
+    }
+}
+
+.rigthBlockList {
+    ul {
+        margin-left: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 135px;
+
+        li {
+            width: 305px;
+        }
+    }
 }

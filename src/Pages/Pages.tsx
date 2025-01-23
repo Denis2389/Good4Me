@@ -4,6 +4,7 @@ import Advantages from '../components/Main/Advantages/Advantages';
 import Control from '../components/Main/Control/Control';
 import Process from '../components/Main/Process/Process';
 import Products from '../components/Main/Products/Products';
+import Reviews from '../components/Main/Reviews/Reviews';
 import Titles from '../components/Main/Title/Titles';
 import Vitamins from '../components/Main/Vitamins/Vitamins';
 import styles from './Pages.module.sass'
@@ -22,6 +23,7 @@ const Pages = () => {
           <Vitamins />
           <Products />
           <About />
+          <Reviews />
         </main>
       </>
     );
