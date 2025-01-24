@@ -83,6 +83,16 @@
 
             .swiper-pagination-bullet {
                 margin-top: 150px;
+                background: #FFFFFF;
+                border: 2px solid #dfdfdf;
+                width: 14px;
+                height: 14px;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet-active {
+                border: 2px solid #f6623e;
+                background: #F6623E;
             }
         }
     }

@@ -1,0 +1,144 @@
+.footer {
+    padding: 77px 121px 19px 121px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828181;
+}
+
+.firstBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+    img {
+        width: 138px;
+        height: 33px;
+    }
+    
+    p {
+        padding-top: 10px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        color: #454545;
+    }
+}
+
+.secondBlock {
+    h3 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 100%;
+        color: #000;
+        text-align: center;
+        padding-bottom: 11px;
+    }
+    
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        color: #454545;
+        width: 348px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 310px;
+    border-bottom: 2px solid black;
+
+    input {
+        border: none;
+        padding-bottom: 13px;
+        outline: none;
+        font-size: 16px;
+        padding: 13px 0;
+        flex-grow: 1;
+    }
+
+    button {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        text-transform: uppercase;
+        color: #f6623e;
+        border: none;
+        background: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.thirdBlock {
+    h3 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #000;
+        margin-bottom: 13px;
+    }
+
+    ul {
+
+        li {
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 206%;
+                color: #454545;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #f6623e;
+                }
+            }
+        }
+    }
+}
+
+.footerLastBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 122px;
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        color: #000;
+
+        span {
+            color: #f6623e;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 20px;
+            cursor: pointer;
+            transition: scale 0.3s ease;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -9,6 +9,7 @@ import Titles from '../components/Main/Title/Titles';
 import Vitamins from '../components/Main/Vitamins/Vitamins';
 import News from '../components/Main/News/News'
 import styles from './Pages.module.sass'
+import Footer from '../components/Footer/Footer';
 
 const Pages = () => {
     return (
@@ -27,6 +28,7 @@ const Pages = () => {
           <Reviews />
           <News />
         </main>
+        <footer><Footer /></footer>
       </>
     );
 }
