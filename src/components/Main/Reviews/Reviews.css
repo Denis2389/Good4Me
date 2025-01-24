@@ -1,16 +1,1 @@
-.swiper-pagination-bullet {
-    background: #FFFFFF;
-    border: 2px solid #dfdfdf;
-    width: 14px;
-    height: 14px;
-}
 
-.swiper-pagination-bullet-active {
-    background: #F6623E;
-    border: none;
-    padding: 2px;
-}
-
-.swiper-slide {
-    width: 565px !important;
-}

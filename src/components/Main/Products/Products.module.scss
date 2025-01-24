@@ -19,7 +19,6 @@
         }
 
         h3 {
-            font-family: var(--font-family);
             font-weight: 700;
             font-size: 46px;
             line-height: 113%;
@@ -75,8 +74,56 @@
     }
 }
 
+.firstSwiper {
+    :global {
+        .swiper {
+            position: relative;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-image: url(./circle.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+            border: none;
+            // position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+
+            &:hover {
+                background: #f6623e;
+            }
+        }
+        
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 16px;
+            color: #000;
+            transition: color 0.1s ease;
+        }
+
+        .swiper-button-next:hover::after,
+        .swiper-button-prev:hover::after {
+            color: #fff;
+        }
+
+        .swiper-button-next {
+            right: 2%;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+    }
+}
+
 .photoContainer {
-    position: relative;
+    // position: relative;
     margin-top: 120px;
 }
 
@@ -87,3 +134,4 @@
         max-width: 600px;
     }
 }
+
