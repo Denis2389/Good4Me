@@ -4,7 +4,6 @@
 
 
     h2 {
-        font-family: var(--font-family);
         font-weight: 600;
         font-size: 40px;
         line-height: 152%;
@@ -40,7 +39,6 @@
             }
 
             p {
-                font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 200%;
@@ -69,4 +67,35 @@
     background: #fff8f6;
     border-radius: 10px;
     padding: 44px 26px 59px 26px;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1330px) {
+    .processContainer {
+        max-width: 1330px;
+        padding-left: 130px;
+        padding-right: 130px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        ul {
+            gap: 30px;
+
+            li {
+                img {
+                    width: 40px;
+                }
+
+                h3 {
+                    padding-top: 20px;
+                    padding-bottom: 12px;
+                }
+
+                p {
+                    width: 240px;
+                }
+            }
+        }
+    }
 }

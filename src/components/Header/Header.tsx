@@ -3,13 +3,29 @@ import Logo from '/images/Header/Logo.svg'
 import Loupe from '/images/Header/loupe.svg'
 import Group from '/images/Header/group.svg'
 import Basket from '/images/Header/basket.svg'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
+import { useState } from 'react'
 
 const Header = () => {
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const openMenu = () => {
+    setIsOpen(true)
+  }
+
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
+
     return (
       <div className={styles.headerContainer}>
         <div className={styles.logo}>
           <img src={Logo} alt="Logo" />
         </div>
+        <div className={styles.burderIcon} onClick={openMenu}><RxHamburgerMenu size={30}/></div>
         <ul className={styles.titleList}>
           <li className={styles.underlineBlock}>
             <a href="#">home</a>
@@ -47,6 +63,20 @@ const Header = () => {
             </a>
           </li>
         </ul>
+
+        {isOpen && (
+          <div className={`${styles.burgerMenu} ${isOpen ? styles.menuVisible : styles.menuHidden}`}>
+            <button onClick={closeMenu}><IoCloseOutline size={32}/></button>
+            <ul>
+              <li>home</li>
+              <li>shop</li>
+              <li>faq's</li>
+              <li>stockists</li>
+              <li>wholesale</li>
+              <li>contact</li>
+            </ul>
+          </div>
+        )}
       </div>
     );
 }

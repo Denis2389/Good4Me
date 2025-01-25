@@ -14,3 +14,20 @@
     height: 25px;
    }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1330px) {
+   .advantagesContainer {
+      max-width: 1330px;
+      padding: 70px 150px;
+
+      ul {
+         gap: 100px;
+
+         li {
+            img {
+               width: 120px;
+            }
+         }
+      }
+   }
+}

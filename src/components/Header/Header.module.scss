@@ -11,10 +11,14 @@
     }
 }
 
-.logo {
-    width: 195px;
-    height: 45px;
+.burderIcon {
+    display: none;
 }
+
+// .logo {
+//     width: 195px;
+//     height: 45px;
+// }
 
 .titleList {
     li {
@@ -76,4 +80,96 @@
             height: 24px;
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1330px) {
+    .headerContainer {
+        max-width: 1330px;
+        padding: 20px 50px;
+    }
+
+    .logo {
+        img {
+            margin-top: 7px;
+            width: 125px;
+        }
+    }
+
+    .titleList {
+
+        li {
+            margin-right: 20px;
+        }
+
+        .underlineBlock {
+
+            a {
+                font-size: 14px;
+            }
+            
+        }
+
+    }
+
+    .svgList {
+        li {
+            margin-right: 16px;
+        }
+
+        a {
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+}
+
+
+
+.burgerMenu {
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff8f6;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+
+    button {
+        border: none;
+        background: none;
+    }
+}
+
+.menuVisible {
+    transform: translateX(0);
+}
+
+.menuHidden {
+    transform: translateX(-100%);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 770px){
+
+    .burderIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .headerContainer {
+        max-width: 770px;
+        padding: 10px 8px;
+
+        ul {
+            display: none;
+        }
+    }
+
+    
 }
