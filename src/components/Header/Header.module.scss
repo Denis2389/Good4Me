@@ -1,5 +1,5 @@
 .headerContainer {
-    max-width: 1920px;
+    max-width: 1720px;
     padding: 20px 100px;
     display: flex;
     align-items: center;
@@ -9,16 +9,7 @@
         display: flex;
         align-items: center;
     }
-}
 
-.burderIcon {
-    display: none;
-}
-
-// .logo {
-//     width: 195px;
-//     height: 45px;
-// }
 
 .titleList {
     li {
@@ -30,8 +21,6 @@
     }
 
     .underlineBlock {
-        position: relative;
-
         a {
             text-decoration: none;
             text-transform: uppercase;
@@ -61,6 +50,7 @@
 }
 
 .svgList {
+
     li {
         margin-right: 26px;
         transition: transform 0.3s ease;
@@ -81,95 +71,83 @@
         }
     }
 }
+}
 
-@media screen and (min-width: 768px) and (max-width: 1330px) {
+.burderIcon {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .headerContainer {
-        max-width: 1330px;
-        padding: 20px 50px;
-    }
-
-    .logo {
-        img {
-            margin-top: 7px;
-            width: 125px;
-        }
+        max-width: 1023px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .titleList {
-
         li {
-            margin-right: 20px;
-        }
-
-        .underlineBlock {
-
-            a {
-                font-size: 14px;
-            }
-            
-        }
-
-    }
-
-    .svgList {
-        li {
-            margin-right: 16px;
-        }
-
-        a {
-            img {
-                width: 18px;
-                height: 18px;
-            }
-        }
-    }
-
-}
-
-
-
-.burgerMenu {
-    padding: 20px 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff8f6;
-    z-index: 999;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out;
-
-    button {
-        border: none;
-        background: none;
-    }
-}
-
-.menuVisible {
-    transform: translateX(0);
-}
-
-.menuHidden {
-    transform: translateX(-100%);
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 770px){
-
-    .burderIcon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .headerContainer {
-        max-width: 770px;
-        padding: 10px 8px;
-
-        ul {
             display: none;
         }
     }
 
-    
+    .svgList {
+        li {
+            display: none;
+        }
+    }
+
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+
+    .burderIcon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .headerContainer {
+        max-width: 767px;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+
+    .burderIcon {
+        display: block;
+    }
+
+    .titleList {
+        li {
+            display: none;
+        }
+    }
+
+    .svgList {
+        li {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+    .headerContainer {
+        max-width: 1330px;
+        padding: 15px 50px;
+
+        .titleList {
+            li {
+                margin-right: 35px;  
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
 }

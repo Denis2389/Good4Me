@@ -4,8 +4,8 @@ import Loupe from '/images/Header/loupe.svg'
 import Group from '/images/Header/group.svg'
 import Basket from '/images/Header/basket.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoCloseOutline } from "react-icons/io5";
 import { useState } from 'react'
+import BurgerMenu from './BurgerMenu'
 
 const Header = () => {
 
@@ -13,10 +13,6 @@ const Header = () => {
 
   const openMenu = () => {
     setIsOpen(true)
-  }
-
-  const closeMenu = () => {
-    setIsOpen(false)
   }
 
 
@@ -65,17 +61,7 @@ const Header = () => {
         </ul>
 
         {isOpen && (
-          <div className={`${styles.burgerMenu} ${isOpen ? styles.menuVisible : styles.menuHidden}`}>
-            <button onClick={closeMenu}><IoCloseOutline size={32}/></button>
-            <ul>
-              <li>home</li>
-              <li>shop</li>
-              <li>faq's</li>
-              <li>stockists</li>
-              <li>wholesale</li>
-              <li>contact</li>
-            </ul>
-          </div>
+          <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
         )}
       </div>
     );
