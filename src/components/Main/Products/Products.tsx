@@ -32,8 +32,9 @@ const Products = () => {
               modules={[Navigation]}
               breakpoints={{
                 320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 2, spaceBetween: 1 },
+                1330: { slidesPerView: 3 }
               }}
             >
               <SwiperSlide className={styles.firstSwiperSlide}>

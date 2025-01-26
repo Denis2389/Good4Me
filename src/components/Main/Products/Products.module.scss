@@ -1,11 +1,11 @@
 .productsContainer {
+    max-width: 1810px;
     margin-top: 54px;
     margin-bottom: 170px;
     padding-left: 110px;
     display: flex;
 
     .textContainer {
-
         width: 57%;
         margin-top: 120px;
 
@@ -119,6 +119,17 @@
         .swiper-button-prev {
             left: 0;
         }
+
+        @media screen and (min-width: 1024px) and (max-width: 1330px) {
+            .swiper-button-next {
+                right: 10%;
+            }
+
+            .swiper-button-prev {
+                left: 1%;
+            }
+        }
+
     }
 }
 
@@ -135,3 +146,131 @@
     }
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+    .productsContainer {
+        max-width: 1330px;
+        margin-top: 0;
+        padding-left: 20px;
+
+        .textContainer {
+            margin-top: 90px;
+
+            h4 {
+                font-size: 12px;
+            }
+
+            h3 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-bottom: 50px;
+                width: 450px;
+            }
+        }
+    }
+
+    .cardList {
+
+        width: 200px;
+
+        img {
+            width: 200px;
+        }
+
+        h5 {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-size: 11px;
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .firstSwiper {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pngBg {
+        background-color: #fef0e7;
+        border-radius: 20px;
+         img {
+             max-width: 420px;
+         }
+     } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .productsContainer {
+        max-width: 1023px;
+        margin-top: 0;
+        padding-left: 10px;
+
+        .textContainer {
+            margin-top: 50px;
+
+            h4 {
+                font-size: 10px;
+            }
+
+            h3 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-bottom: 30px;
+                width: 400px;
+            }
+        }
+    }
+
+    .cardList {
+
+        width: 150px;
+
+        img {
+            width: 200px;
+        }
+
+        h5 {
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-size: 9px;
+
+            span {
+                font-size: 8px;
+            }
+        }
+    }
+
+    .firstSwiper {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .pngBg {
+        background-color: #fef0e7;
+        border-radius: 20px;
+        margin-left: 20px;
+         img {
+             max-width: 300px;
+         }
+     } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+}
