@@ -1,7 +1,12 @@
 import { IoCloseOutline } from "react-icons/io5";
 import styles from './BurgerMenu.module.scss'
 
-const BurgerMenu = ({ isOpen, setIsOpen }) => {
+interface BurgerMenuProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, setIsOpen }) => {
 
     const closeMenu = () => {
         setIsOpen(false)
