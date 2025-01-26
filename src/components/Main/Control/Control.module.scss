@@ -28,7 +28,6 @@
     }
 
     h3 {
-        font-family: var(--font-family);
         font-weight: 600;
         font-size: 24px;
         line-height: 129%;
@@ -68,7 +67,6 @@
         line-height: 150%;
         color: #828181;
         margin-left: 195px;
-        // margin-top: 180px;
         width: 370px;
     }
 
@@ -116,3 +114,154 @@
     margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+    .controlContainer {
+        max-width: 1330px;
+    }
+
+    .textBlock {
+        padding: 170px 0 120px 20px;
+        background-size: 160px;
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .photoGirl {
+        display: none;
+    }
+    
+    .titleTexts {
+        margin-left: 50px;
+
+        p {
+            margin-left: 110px;
+        }
+
+        button {
+            margin-left: 110px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .controlContainer {
+        max-width: 1023px;
+    }
+    .textBlock {
+        padding: 180px 0 120px 60px;
+        background-size: 130px;
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+    }
+
+    .photoGirl {
+        display: none;
+    }
+    
+    .titleTexts {
+        margin-left: 50px;
+
+        p {
+            margin-left: 30px;
+            font-size: 13px;
+            width: 270px;
+        }
+
+        button {
+            margin-left: 30px;
+            padding: 12px 24px;
+        }
+
+        h2 {
+            font-size: 32px;
+            width: 270px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .controlContainer {
+        max-width: 767px;
+        display: block;
+    }
+
+    .textBlock {
+        padding: 140px 0 120px 90px;
+        background-size: 90px;
+        margin-top: 5px;
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 11px;
+        }
+
+        p {
+            font-size: 9px;
+        }
+    }
+
+    .photoGirl {
+        display: none;
+    }
+    
+    .titleTexts {
+        margin-left: 10px;
+
+        p {
+            margin-left: 30px;
+            font-size: 9px;
+            width: 220px;
+            margin-top: 30px;
+        }
+
+        button {
+            margin-left: 30px;
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 24px;
+            width: 200px;
+            margin-top: 20px;
+        }
+    }
+}

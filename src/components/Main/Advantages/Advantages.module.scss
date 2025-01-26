@@ -1,6 +1,6 @@
 .advantagesContainer {
    padding: 100px 330px 90px 330px;
-   max-width: 1920px;
+   max-width: 1260px;
 
    ul {
     display: flex;
@@ -15,7 +15,7 @@
    }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1330px) {
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
    .advantagesContainer {
       max-width: 1330px;
       padding: 70px 150px;
@@ -26,6 +26,40 @@
          li {
             img {
                width: 120px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .advantagesContainer {
+      max-width: 1023px;
+      padding: 70px 100px;
+
+      ul {
+         gap: 50px;
+
+         li {
+            img {
+               width: 120px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+   .advantagesContainer {
+      max-width: 767px;
+      padding: 70px 50px;
+      margin: 0 auto;
+
+      ul {
+         gap: 20px;
+         li {
+            img {
+               width: 50px;
             }
          }
       }

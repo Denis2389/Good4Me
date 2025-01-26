@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #fff8f6;
     z-index: 9999;
     transform: translateX(-100%);
@@ -21,4 +21,22 @@
 
 .menuHidden {
     transform: translateX(-100%);
+}
+
+.burgerMenu {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 20px;
+        li {
+            font-size: 40px;
+            a {
+                color: black;
+                margin: 0 auto;
+            }
+        }
+    }
 }
