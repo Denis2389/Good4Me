@@ -2,7 +2,7 @@
     display: flex;
     margin-bottom: 110px;
     max-width: 1920px;
-
+    margin: 0 auto;
 }
 
 .textBlock {
@@ -264,4 +264,13 @@
             margin-top: 20px;
         }
     }
+}
+
+@media screen and (min-width: 1331px) and (max-width: 1800px) {
+    .photoGirl {
+        width: 320px;
+        transform: translateX(220%);
+        top: 260px;
+    }
+    
 }

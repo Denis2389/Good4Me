@@ -4,9 +4,13 @@
     margin-bottom: 170px;
     padding-left: 110px;
     display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 170px;
 
     .textContainer {
-        width: 57%;
+        max-width: 57%;
+        // width: 57%;
         margin-top: 120px;
 
         
@@ -142,6 +146,7 @@
    background-color: #fef0e7;
    border-radius: 20px;
     img {
+        display: none;
         max-width: 600px;
     }
 }
@@ -177,7 +182,7 @@
         width: 200px;
 
         img {
-            width: 200px;
+            width: 220px;
         }
 
         h5 {
@@ -238,7 +243,7 @@
         width: 150px;
 
         img {
-            width: 200px;
+            width: 220px;
         }
 
         h5 {
@@ -272,5 +277,37 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .cardList {
+        img {
+            width: 340px;
+        }
+    }
+}
 
+@media screen and (min-width: 1130px ) and (max-width: 1329px){
+    .cardList {
+        img {
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (min-width: 1510px) and (max-width: 1720px) {
+    .cardList {
+        width: 200px;
+
+        img {
+            width: 260px;
+        }
+    }
+}
+
+@media  screen and (min-width: 1331px) and (max-width: 1510px) {
+    .cardList {
+        width: 230px;
+
+        img {
+            width: 230px;
+        }
+    }
 }

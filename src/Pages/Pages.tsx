@@ -8,16 +8,16 @@ import Reviews from '../components/Main/Reviews/Reviews';
 import Titles from '../components/Main/Title/Titles';
 import Vitamins from '../components/Main/Vitamins/Vitamins';
 import News from '../components/Main/News/News'
-import styles from './Pages.module.sass'
+import styles from './Pages.module.css'
 import Footer from '../components/Footer/Footer';
 
 const Pages = () => {
     return (
       <>
-        <header className={styles.header}>
+        <header>
           <Header />
         </header>
-        <main>
+        <main className={styles.main}>
           <Titles />
           <Advantages />
           <Process />
@@ -28,7 +28,7 @@ const Pages = () => {
           <Reviews />
           <News />
         </main>
-        <footer><Footer /></footer>
+        <footer className={styles.footer}><Footer /></footer>
       </>
     );
 }

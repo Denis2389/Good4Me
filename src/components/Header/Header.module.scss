@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     
     ul {
         display: flex;
@@ -29,6 +30,7 @@
             line-height: 133%;
             color: #000;
             transition: color 0.3s ease;
+            position: relative;
 
             &::after {
                 color: #f6623e;

@@ -3,6 +3,7 @@
     border-radius: 0 0 200px 200px;
     max-width: 1520px;
     padding: 208px 176px;
+    margin: 0 auto;
 }
 
 
@@ -155,6 +156,18 @@
             min-width: 250px;
             max-width: 350px;
     
+        }
+    }
+}
+
+@media screen and (min-width: 1331px) and (max-width: 1533px) {
+    .titleContainer {
+        padding: 150px 120px;
+    }
+
+    .title {
+        h1 {
+            font-size: 45px;
         }
     }
 }
