@@ -35,7 +35,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-            <img src={bottleBg} alt="bottle" />
+            <div className={styles.bottleBg}><img src={bottleBg} alt="bottle" /></div>
           <div className={styles.rigthBlockList}>
             <ul>
               <li>

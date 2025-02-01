@@ -2,7 +2,6 @@ import 'swiper/swiper-bundle.css'
 import styles from './Reviews.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay } from 'swiper/modules';
-import './Reviews.css'
 import quote from '/images/Main/Reviews/quote.svg'
 import sophiePh from '/images/Main/Reviews/SophieRev.svg'
 import benjaminPh from '/images/Main/Reviews/BenjaminRev.svg'
@@ -27,14 +26,14 @@ const Reviews = () => {
             }}
             breakpoints={{
               320: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
+              768: { slidesPerView: 2, spaceBetween: 50 },
               1024: { slidesPerView: 3 },
             }}
           >
             <SwiperSlide className={styles.secondSwiperSlide}>
               <div className={styles.flex}>
                 <div className={styles.flexPhoto}>
-                  <div>
+                  <div className={styles.personImg}>
                     <img src={sophiePh} alt="sophiePh" />
                   </div>
                   <div className={styles.flexName}>
@@ -57,7 +56,7 @@ const Reviews = () => {
             <SwiperSlide className={styles.secondSwiperSlide}>
               <div className={styles.flex}>
                 <div className={styles.flexPhoto}>
-                  <div>
+                  <div className={styles.personImg}>
                     <img src={coralianRev} alt="coralianPh" />
                   </div>
                   <div className={styles.flexName}>
@@ -80,7 +79,7 @@ const Reviews = () => {
             <SwiperSlide className={styles.secondSwiperSlide}>
               <div className={styles.flex}>
                 <div className={styles.flexPhoto}>
-                  <div>
+                  <div className={styles.personImg}>
                     <img src={benjaminPh} alt="coralianPh" />
                   </div>
                   <div className={styles.flexName}>
@@ -103,7 +102,7 @@ const Reviews = () => {
             <SwiperSlide className={styles.secondSwiperSlide}>
               <div className={styles.flex}>
                 <div className={styles.flexPhoto}>
-                  <div>
+                  <div className={styles.personImg}>
                     <img src={coralianRev} alt="coralianPh" />
                   </div>
                   <div className={styles.flexName}>

@@ -47,7 +47,7 @@
         line-height: 206%;
         letter-spacing: 0.06em;
         color: #000;
-        width: 540px;
+        max-width: 540px;
     }
 }
 
@@ -77,9 +77,7 @@
 
     :global {
         .swiper {
-            padding-right: 100px;
-            .swiper-slide {
-            }
+            padding-right: 130px;
 
             .swiper-pagination-bullet {
                 margin-top: 150px;
@@ -98,15 +96,32 @@
     }
 }
 
-.swiper-pagination-bullet {
-    background: #FFFFFF;
-    border: 2px solid #dfdfdf;
-    width: 14px;
-    height: 14px;
-}
+@media screen and (min-width: 320px) and (max-width: 728px) {
 
-// .swiper-pagination-bullet-active {
-//     background: #F6623E;
-//     border: none;
-//     padding: 2px;
-// }
+    .reviewsContainer {
+        h2 {
+            font-size: 23px;
+        }
+    }
+
+    .personImg {
+        img {
+            width: 40px;
+        }
+    }
+
+    .secondSwiperSlide {
+
+        p {
+            font-size: 12px;
+        }
+
+        h4 {
+            font-size: 12px;
+        }
+
+        h5 {
+            font-size: 8px;
+        }
+    }
+}

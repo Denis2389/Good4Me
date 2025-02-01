@@ -3,6 +3,7 @@
     border-radius: 0 0 0 200px;
     padding: 94px 333px;
     margin: 0 auto;
+    max-width: 1254px;
 
     h2 {
         font-weight: 600;
@@ -60,6 +61,7 @@
 }
 
 .rigthBlockList {
+
     ul {
         margin-left: 180px;
         display: flex;
@@ -68,6 +70,155 @@
 
         li {
             width: 305px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .aboutContainer {
+        max-width: 1023px;
+        padding: 40px 80px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .description {
+        font-size: 12px;
+    }
+    
+    .leftBlockList,
+    .rigthBlockList {
+        h4 {
+            font-size: 10px;
+        }
+    
+        p {
+            font-size: 9px;
+        }
+    }
+
+    .bottleBg {
+        img {
+            width: 220px;
+        }
+    }
+    
+    .leftBlockList {
+
+        ul {
+            margin-right: 40px;
+            gap: 60px;
+    
+            li {
+                width: 200px;
+            }
+        }
+    }
+    
+    .rigthBlockList {
+        ul {
+            margin-left: 40px;
+            gap: 110px;
+    
+            li {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .aboutContainer {
+        max-width: 767px;
+        padding: 20px 40px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .description {
+        font-size: 8px;
+    }
+    
+    .leftBlockList,
+    .rigthBlockList {
+        h4 {
+            font-size: 8px;
+        }
+    
+        p {
+            font-size: 7px;
+        }
+    }
+
+    .bottleBg {
+        img {
+            width: 120px;
+        }
+    }
+    
+    .leftBlockList {
+        display: none;
+    }
+    
+    .rigthBlockList {
+        ul {
+            margin-left: 40px;
+            gap: 70px;
+            padding-bottom: 50px;
+    
+            li {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+    .aboutContainer {
+        max-width: 1330px;
+        padding: 60px 110px;
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .description {
+        font-size: 16px;
+    }
+    
+    .leftBlockList,
+    .rigthBlockList {
+        h4 {
+            font-size: 13px;
+        }
+    
+        p {
+            font-size: 11px;
+        }
+    }
+    
+    .leftBlockList {
+        ul {
+            margin-right: 40px;
+    
+            li {
+                width: 200px;
+            }
+        }
+    }
+    
+    .rigthBlockList {
+        ul {
+            margin-left: 40px;
+    
+            li {
+                width: 200px;
+            }
         }
     }
 }
