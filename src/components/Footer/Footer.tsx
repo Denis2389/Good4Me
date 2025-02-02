@@ -77,7 +77,7 @@ const Footer = () => {
           <p>
             © 2021, <span>GOOD4ME</span>. Powered by Shopify
           </p>
-          <img src={cards} alt="cards" />
+          <div className={styles.cards}><img src={cards} alt="cards" /></div>
         </div>
       </div>
     );

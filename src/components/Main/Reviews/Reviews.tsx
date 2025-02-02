@@ -17,6 +17,7 @@ const Reviews = () => {
             pagination={{ clickable: true }}
             modules={[Pagination, Autoplay]}
             loop={true}
+            allowTouchMove={true}
             slidesPerView={3}
             spaceBetween={40}
             className={styles.secondSwiper}
