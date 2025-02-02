@@ -236,3 +236,11 @@
         padding-bottom: 30px;
     }
 }
+
+@media screen and (min-width: 530px) and (max-width: 767px) {
+    .firstTitle {
+        padding: 100px 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
