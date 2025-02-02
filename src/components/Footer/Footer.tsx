@@ -59,25 +59,37 @@ const Footer = () => {
         <div className={styles.footerLastBlock}>
           <ul>
             <li>
-              <img src={facebook} alt="facebook" />
+              <a href="https://www.facebook.com/permalink.php/?story_fbid=102682965534140&id=102679885534448">
+                <img src={facebook} alt="facebook" />
+              </a>
             </li>
             <li>
-              <img src={instagram} alt="instagram" />
+              <a href="https://www.instagram.com/vitamins.lv/?locale=ru&hl=am-et">
+                <img src={instagram} alt="instagram" />
+              </a>
             </li>
             <li>
-              <img src={twiter} alt="twiter" />
+              <a href="https://twitter.com/masonvitamins">
+                <img src={twiter} alt="twiter" />
+              </a>
             </li>
             <li>
-              <img src={pinterest} alt="pinterest" />
+              <a href="https://www.pinterest.com/ideas/vitamins/905872983499/">
+                <img src={pinterest} alt="pinterest" />
+              </a>
             </li>
             <li>
-              <img src={youtube} alt="youtube" />
+              <a href="https://www.youtube.com/watch?v=6gZzPE4Ln3s&ab_channel=ThePaintExplainer">
+                <img src={youtube} alt="youtube" />
+              </a>
             </li>
           </ul>
           <p>
             © 2021, <span>GOOD4ME</span>. Powered by Shopify
           </p>
-          <div className={styles.cards}><img src={cards} alt="cards" /></div>
+          <div className={styles.cards}>
+            <img src={cards} alt="cards" />
+          </div>
         </div>
       </div>
     );

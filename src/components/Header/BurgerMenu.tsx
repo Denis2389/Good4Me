@@ -16,7 +16,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, setIsOpen }) => {
       isOpen && (
         <nav className={`${styles.burgerMenu} ${isOpen ? styles.menuVisible : styles.menuHidden}`}>
           <button className={styles.burgerIcon} onClick={closeMenu}>
-            <IoCloseOutline />
+            <IoCloseOutline size={40}/>
           </button>
           <ul>
             <li>
