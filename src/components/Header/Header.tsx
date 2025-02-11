@@ -6,6 +6,7 @@ import Basket from '/images/Header/basket.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from 'react'
 import BurgerMenu from './BurgerMenu'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
 
@@ -21,27 +22,32 @@ const Header = () => {
         <div className={styles.logo}>
           <img src={Logo} alt="Logo" />
         </div>
-        <div className={styles.burderIcon} onClick={openMenu}><RxHamburgerMenu size={30}/></div>
-        <ul className={styles.titleList}>
-          <li className={styles.underlineBlock}>
-            <a href="#">home</a>
-          </li>
-          <li className={styles.underlineBlock}>
-            <a href="#">shop</a>
-          </li>
-          <li className={styles.underlineBlock}>
-            <a href="#">faq's</a>
-          </li>
-          <li className={styles.underlineBlock}>
-            <a href="#">stockists</a>
-          </li>
-          <li className={styles.underlineBlock}>
-            <a href="#">wholesale</a>
-          </li>
-          <li className={styles.underlineBlock}>
-            <a href="#">contact</a>
-          </li>
-        </ul>
+        <div className={styles.burderIcon} onClick={openMenu}>
+          <RxHamburgerMenu size={30} />
+        </div>
+        <nav className={styles.navigation}>
+          <ul className={styles.titleList}>
+            <li className={styles.underlineBlock}>
+              <NavLink to="/">home</NavLink>
+            </li>
+            <li className={styles.underlineBlock}>
+              <a href="#">shop</a>
+            </li>
+            <li className={styles.underlineBlock}>
+              <NavLink to="/faqs">faqs</NavLink>
+            </li>
+            <li className={styles.underlineBlock}>
+              <a href="#">stockists</a>
+            </li>
+            <li className={styles.underlineBlock}>
+              <a href="#">wholesale</a>
+            </li>
+            <li className={styles.underlineBlock}>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+
         <ul className={styles.svgList}>
           <li>
             <a href="#">
@@ -60,9 +66,7 @@ const Header = () => {
           </li>
         </ul>
 
-        {isOpen && (
-          <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
-        )}
+        {isOpen && <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
       </div>
     );
 }
