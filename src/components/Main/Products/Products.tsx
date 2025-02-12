@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import product1 from '/images/Main/Products/product1.png';
 import product2 from '/images/Main/Products/product2.png';
-import product3 from '/images/Main/Products/product3.png'
-import girlPng from './girl.png'
+import product3 from '/images/Main/Products/product3.png';
+import girlPng from './girl.png';
 
 
 const Products = () => {

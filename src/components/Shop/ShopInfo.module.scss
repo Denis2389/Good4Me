@@ -1,0 +1,48 @@
+.shopInfoContainer {
+    h2 {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+    }
+    .list {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .item {
+            img {
+                width: 300px;
+            }
+
+            h5 {
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.06em;
+                color: #000;
+                margin-top: 4px;
+                margin-bottom: 4px; 
+                text-transform: uppercase;
+            }
+
+            strong {
+                font-weight: 500;
+                font-size: 15px;
+                color: #f6623e;
+        
+                span {
+                    margin-left: 10px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-decoration: line-through;
+                    color: #828181;
+                }
+            }
+        }
+    }
+}
+
+

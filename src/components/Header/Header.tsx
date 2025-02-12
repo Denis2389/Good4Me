@@ -28,22 +28,22 @@ const Header = () => {
         <nav className={styles.navigation}>
           <ul className={styles.titleList}>
             <li className={styles.underlineBlock}>
-              <NavLink to="/">home</NavLink>
+              <NavLink to="/" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>home</NavLink>
             </li>
             <li className={styles.underlineBlock}>
-              <a href="#">shop</a>
+              <NavLink to="/shop" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>shop</NavLink>
             </li>
             <li className={styles.underlineBlock}>
-              <NavLink to="/faqs">faqs</NavLink>
+              <NavLink to="/faqs" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>faqs</NavLink>
             </li>
             <li className={styles.underlineBlock}>
-              <a href="#">stockists</a>
+              <NavLink to="/stockists" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>stockists</NavLink>
             </li>
             <li className={styles.underlineBlock}>
-              <a href="#">wholesale</a>
+              <NavLink to="/wholesale" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>wholesale</NavLink>
             </li>
             <li className={styles.underlineBlock}>
-              <a href="#">contact</a>
+              <NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>contact</NavLink>
             </li>
           </ul>
         </nav>

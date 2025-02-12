@@ -1,3 +1,21 @@
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
+  
+    &:hover {
+      color: gray;
+    }
+  }
+  
+  .active {
+    color: #f6623e;
+    font-weight: bold;
+    border-bottom: 2px solid #f6623e;
+  }
+  
+
 .headerContainer {
     max-width: 1720px;
     padding: 20px 100px;
@@ -31,22 +49,6 @@
             color: #000;
             transition: color 0.3s ease;
             position: relative;
-
-            &::after {
-                color: #f6623e;
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background-color: #f6623e;
-                transition: width 0.3s ease;
-            }
-
-            &:hover::after {
-                width: 100%;
-            }
         }
     }
 }
