@@ -1,5 +1,6 @@
 import { IoCloseOutline } from "react-icons/io5";
 import styles from './BurgerMenu.module.scss'
+import { NavLink } from "react-router-dom";
 
 interface BurgerMenuProps {
   isOpen: boolean;
@@ -20,22 +21,22 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, setIsOpen }) => {
           </button>
           <ul>
             <li>
-              <a href="#">home</a>
+            <NavLink to="/">home</NavLink>
             </li>
             <li>
-              <a href="#">shop</a>
+              <NavLink to="/shop">shop</NavLink>
             </li>
             <li>
-               <a href="#">faq's</a>
+               <NavLink to="/faqs">faqs</NavLink>
             </li>
             <li>
-              <a href="#">stockists</a>
+              <NavLink to="/stockists">stockists</NavLink>  
             </li>
             <li>
-              <a href="#">wholesale</a>
+              <NavLink to="/wholesale">wholesale</NavLink>
             </li>
             <li>
-              <a href="#">contact</a>
+              <NavLink to="/contact">contact</NavLink>
             </li>
           </ul>
         </nav>

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Titles.module.scss'
 import Background from '/images/Main/Title/background.png'
 
@@ -12,7 +13,7 @@ const Titles = () => {
               Good4Me Apple Cider Vinegar gummies are the newest addition to
               your morning health and well-being regime.
             </h3>
-            <button>shop now</button>
+            <button><NavLink style={{ color: '#fff' }} to="/shop">shop now</NavLink></button>
           </div>
           <div className={styles.bgPhoto}>
             <img src={Background} alt="vitamins" />

@@ -20,7 +20,9 @@ const Header = () => {
     return (
       <div className={styles.headerContainer}>
         <div className={styles.logo}>
+          <NavLink to='/'>
           <img src={Logo} alt="Logo" />
+          </NavLink>
         </div>
         <div className={styles.burderIcon} onClick={openMenu}>
           <RxHamburgerMenu size={30} />
